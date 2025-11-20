@@ -1,0 +1,30 @@
+:root{--bg:#0b0b0b;--panel:#111;--gold:#cfa34a;--muted:#bdbdbd}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#eee;font-family:Arial,Helvetica,sans-serif;line-height:1.45}
+.container{width:92%;max-width:1100px;margin:0 auto}
+.site-header{background:linear-gradient(180deg,#000,#0b0b0b);border-bottom:1px solid rgba(255,255,255,0.03);position:sticky;top:0;z-index:40}
+.header-inner{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{height:64px;display:block;border-radius:8px;background:#fff;padding:6px}
+.brand-text h1{margin:0;font-size:18px;color:var(--gold)}
+.brand-text .small{font-size:12px;color:var(--muted);margin-top:2px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:12px;padding:8px;border-radius:6px}
+.nav a:hover{color:#fff;background:rgba(255,255,255,0.03)}
+.hero{padding:48px 0;display:flex;align-items:center}
+.hero-inner{display:flex;gap:24px;align-items:center}
+.hero-left{flex:1}
+.hero-left h2{font-size:30px;color:var(--gold);margin:0 0 8px}
+.hero-left p{color:var(--muted);max-width:520px}
+.cta{margin-top:12px;display:flex;gap:10px}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn.gold{background:linear-gradient(90deg,var(--gold),#e6c86b);color:#111}
+.btn.outline{border:1px solid rgba(255,255,255,0.06);color:var(--muted);background:transparent}
+.section{padding:40px 0}
+.section h3{color:var(--gold);margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--panel);padding:14px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);text-align:left}
+.card h4{margin:10px 0 6px}
+.card p{color:var(--muted);margin:0}
+.section.alt{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
+.contact-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.site-footer{padding:14px 0;border-top:1px solid rgba(255,255,255,0.03);text-align:center;color:var(--muted);font-size:14px;margin-top:20px}
+@media (max-width:800px){.hero-inner{flex-direction:column}.nav{display:none}.brand-text h1{font-size:16px}.logo{height:56px}}
