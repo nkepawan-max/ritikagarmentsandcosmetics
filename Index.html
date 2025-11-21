@@ -25,3 +25,42 @@
     </footer>
 </body>
 </html>
+<section class="premium-section" style="margin:40px 0;">
+  <h2 style="text-align:center;margin-bottom:20px;font-size:24px;font-weight:700;">Our Premium Products</h2>
+
+  <div class="premium-product-container" 
+       style="display:flex;overflow-x:auto;gap:20px;padding:10px;scroll-behavior:smooth;">
+       
+    <div class="product-card" 
+         style="min-width:220px;background:#fff;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.15);padding:15px;text-align:center;">
+      <img src="product1.jpg" style="width:100%;border-radius:10px;" />
+      <h3 style="font-size:18px;">Men's Stylish Jacket</h3>
+      <p style="margin:5px 0;">MRP: ₹1299</p>
+    </div>
+
+    <div class="product-card" 
+         style="min-width:220px;background:#fff;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.15);padding:15px;text-align:center%;">
+      <img src="product2.jpg" style="width:100%;border-radius:10px;" />
+      <h3 style="font-size:18px;">Kids Winter Wear</h3>
+      <p style="margin:5px 0;">MRP: ₹799</p>
+    </div>
+
+    <div class="product-card" 
+         style="min-width:220px;background:#fff;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.15);padding:15px;text-align:center;">
+      <img src="product3.jpg" style="width:100%;border-radius:10px;" />
+      <h3 style="font-size:18px;">Cosmetics & Beauty Kit</h3>
+      <p style="margin:5px 0;">MRP: ₹599</p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+const container = document.querySelector('.premium-product-container');
+let scrollAmount = 0;
+setInterval(() => {
+  scrollAmount += 250;
+  if(scrollAmount >= container.scrollWidth) scrollAmount = 0;
+  container.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+}, 2500);
+</script>
